@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./head.ejs') %>
+
+    <body>
+        <%- include('./navigation.ejs') %>
+            <h1>Lista de oficinas</h1>
+            <a class="btn btn-primary custom-pink" href="/agregar_oficina" role="button">Agregar</a>
+            <div class="container">
+                <% oficinas.forEach(element => { %>
+                    <div class="row">
+                        <div class="col-md-4 mt-4">
+                            <%= element.denominacion %>
+                        </div>
+                        <div class="col-md-4 mt-4">
+                            <a class="btn btn-primary custom-pink" href="/edit_oficina/<%= element.id %>" role="button">Editar</a>
+                            <a class="btn btn-primary custom-pink" href="/delete_oficina/<%= element.id %>" role="button">Borrar</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <% }) %>
+
+            </div>
+
+
+            <ul>
+
+            </ul>
+    </body>
+
+</html>

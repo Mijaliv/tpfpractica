@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./head.ejs') %>
+
+<body>
+    <h1>Agregar oficina</h1>
+    <form action="/agregar_oficina" method="post">
+        <input type="text" name="Denominacion" placeholder="Denominación">
+        <br>
+        <br>
+        <button class= "btn btn-primary custom-pink" type="submit">Agregar</button>
+        <a class= "btn btn-danger custom-red" href="/oficinas"> Cancelar</a>
+    </form>
+</body>
+
+</html>

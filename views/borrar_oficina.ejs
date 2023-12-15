@@ -5,12 +5,13 @@
 
     <body>
         <h1>Confirma que desea eliminar ese registro?</h1>
-        <form action="/delete/<%= item.id %>" method="post">
-            <span><%= item.nombre %></span>
+       
+        <form action="/delete_oficina/<%= item.id %>" method="post">
+            <span><%= item.denominacion %></span>
             <br>
             <br>
             <button class= "btn btn-primary custom-pink" type="submit">Confirmar</button>
-            <a class= "btn btn-danger custom-red" href="/personas"> Cancelar</a>
+            <a class= "btn btn-danger custom-red" href="/oficinas"> Cancelar</a>
         </form>
 
     </body>

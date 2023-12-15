@@ -1,4 +1,4 @@
-version: '1'
+version: '2'
 services:
   # Servicio de MySQL
   mysql:
@@ -15,7 +15,7 @@ services:
       
   # Servicio de la aplicación Node.js
   node_app:
-    image: mijal1/TPFPractica:1.0
+    image: mijal1/tpfpractica:1.0
     container_name: mi_app_node
     ports:
       - "3000:3000"    

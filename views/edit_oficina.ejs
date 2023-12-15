@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./head.ejs') %>
+
+    <body>
+        <h1>
+            Editar oficina
+        </h1>
+        <form action="/update_oficina/<%= item.id %>" method="post">
+            <input type="text" name="Denominacion" value="<%= item.denominacion %>" required>
+            <br>
+            <br>
+            <button class= "btn btn-primary custom-pink" type="submit">Actualizar</button>
+            <a class= "btn btn-danger custom-red" href="/oficinas"> Cancelar</a>
+        </form>
+    </body>
+
+</html>
