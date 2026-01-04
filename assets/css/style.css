@@ -1,0 +1,205 @@
+body {
+    font-family: 'Wix Madefor Text', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #0d0c22;
+    color: #e0e0e0;
+}
+
+.floating-card {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+body.dark-mode .floating-card {
+    background: rgba(25, 28, 52, 0.6);
+    border-color: rgba(0, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 255, 255, 0.3);
+}
+
+.container.floating-card {
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+h1 {
+    color: deeppink;
+    transition: all 0.3s ease;
+}
+
+body.dark-mode h1 {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+.navbar-custom {
+    background-color: pink !important;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+}
+
+.navbar-custom .nav-link, .navbar-custom .navbar-brand {
+    color: #000;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #333;
+}
+
+body.dark-mode .navbar-custom {
+    background: rgba(25, 28, 52, 0.6) !important;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+body.dark-mode .navbar-custom .nav-link,
+body.dark-mode .navbar-custom .navbar-brand {
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar-custom .nav-link:hover {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+.table {
+    background: transparent;
+}
+
+.table-header-custom {
+    background-color: pink;
+    color: #000;
+}
+
+body.dark-mode .table-header-custom {
+    background-color: transparent;
+    color: #00ffff;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+}
+
+.table-header-custom th {
+    border-bottom: none;
+}
+
+body.dark-mode .table-header-custom th {
+    border-bottom: 2px solid #00ffff;
+}
+
+.table td, .table th {
+    border-top-color: rgba(0,0,0,0.1);
+}
+
+body.dark-mode .table td, body.dark-mode .table th {
+    border-color: rgba(0, 255, 255, 0.2);
+}
+
+.btn {
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border-width: 2px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary, .btn-secondary, .btn {
+    color: deeppink;
+    border-color: deeppink;
+    background-color: transparent;
+}
+
+.btn-primary:hover, .btn-secondary:hover, .btn:hover {
+    background-color: pink;
+    color: #000;
+    border-color: pink;
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.6);
+}
+
+.btn-danger {
+    color: deeppink;
+    border-color: deeppink;
+}
+
+.btn-danger:hover {
+    background-color: pink;
+    color: #000;
+    border-color: pink;
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.6);
+}
+
+body.dark-mode .btn-primary, body.dark-mode .btn-secondary, body.dark-mode .btn {
+    color: #00ffff;
+    border-color: #00ffff;
+    background-color: transparent;
+}
+
+body.dark-mode .btn-primary:hover, body.dark-mode .btn-secondary:hover, body.dark-mode .btn:hover {
+    background-color: #00ffff;
+    color: #0d0c22;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+body.dark-mode .btn-danger {
+    color: #ff2d75;
+    border-color: #ff2d75;
+}
+
+body.dark-mode .btn-danger:hover {
+    background-color: #ff2d75;
+    color: #fff;
+    box-shadow: 0 0 15px #ff2d75;
+}
+
+#dark-mode-toggle {
+    color: #000;
+    border-color: #000;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #000;
+    color: pink;
+}
+
+body.dark-mode #dark-mode-toggle {
+    border-color: #00ffff;
+    color: #00ffff;
+}
+
+body.dark-mode #dark-mode-toggle:hover {
+    background: #00ffff;
+    color: #0d0c22;
+}
+
+/* --- Responsive Design for Small Screens --- */
+@media (max-width: 768px) {
+    .container.floating-card {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    .navbar-custom {
+        margin: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .table-responsive-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
