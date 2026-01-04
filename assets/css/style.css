@@ -203,3 +203,8 @@ body.dark-mode #dark-mode-toggle:hover {
         -webkit-overflow-scrolling: touch;
     }
 }
+.footer-custom {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
